@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		0BC1689626645BAD00E0C5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC1689426645BAD00E0C5BE /* Main.storyboard */; };
 		0BC1689826645BB000E0C5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC1689726645BB000E0C5BE /* Assets.xcassets */; };
 		0BC1689B26645BB000E0C5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC1689926645BB000E0C5BE /* LaunchScreen.storyboard */; };
+		0BC168A92664650000E0C5BE /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC168A82664650000E0C5BE /* AddViewController.swift */; };
+		0BC168AC2664686B00E0C5BE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC168AB2664686B00E0C5BE /* Player.swift */; };
+		F689D668CCC43A9D5682DB47 /* Pods_Ranking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91556BD35C2B8FB1ABAB3558 /* Pods_Ranking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4B9C07FEB8CDCEE527EF15 /* Pods-Ranking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ranking.release.xcconfig"; path = "Target Support Files/Pods-Ranking/Pods-Ranking.release.xcconfig"; sourceTree = "<group>"; };
 		0BC1688B26645BAD00E0C5BE /* Ranking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ranking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC1688E26645BAD00E0C5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC1689026645BAD00E0C5BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		0BC1689726645BB000E0C5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BC1689A26645BB000E0C5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BC1689C26645BB000E0C5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BC168A82664650000E0C5BE /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		0BC168AB2664686B00E0C5BE /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1D92F9C8358E2264BBF3EECE /* Pods-Ranking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ranking.debug.xcconfig"; path = "Target Support Files/Pods-Ranking/Pods-Ranking.debug.xcconfig"; sourceTree = "<group>"; };
+		91556BD35C2B8FB1ABAB3558 /* Pods_Ranking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ranking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F689D668CCC43A9D5682DB47 /* Pods_Ranking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C6FCFBA79402D011F2BFB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91556BD35C2B8FB1ABAB3558 /* Pods_Ranking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0BC1688226645BAD00E0C5BE = {
 			isa = PBXGroup;
 			children = (
 				0BC1688D26645BAD00E0C5BE /* Ranking */,
 				0BC1688C26645BAD00E0C5BE /* Products */,
+				40B37A5022CDC2EB54F62E5E /* Pods */,
+				03C6FCFBA79402D011F2BFB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +77,24 @@
 			children = (
 				0BC1688E26645BAD00E0C5BE /* AppDelegate.swift */,
 				0BC1689026645BAD00E0C5BE /* SceneDelegate.swift */,
+				0BC168AB2664686B00E0C5BE /* Player.swift */,
 				0BC1689226645BAD00E0C5BE /* ViewController.swift */,
+				0BC168A82664650000E0C5BE /* AddViewController.swift */,
 				0BC1689426645BAD00E0C5BE /* Main.storyboard */,
 				0BC1689726645BB000E0C5BE /* Assets.xcassets */,
 				0BC1689926645BB000E0C5BE /* LaunchScreen.storyboard */,
 				0BC1689C26645BB000E0C5BE /* Info.plist */,
 			);
 			path = Ranking;
+			sourceTree = "<group>";
+		};
+		40B37A5022CDC2EB54F62E5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D92F9C8358E2264BBF3EECE /* Pods-Ranking.debug.xcconfig */,
+				0A4B9C07FEB8CDCEE527EF15 /* Pods-Ranking.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BC1689F26645BB000E0C5BE /* Build configuration list for PBXNativeTarget "Ranking" */;
 			buildPhases = (
+				393E4D0AE112AB488117279F /* [CP] Check Pods Manifest.lock */,
 				0BC1688726645BAD00E0C5BE /* Sources */,
 				0BC1688826645BAD00E0C5BE /* Frameworks */,
 				0BC1688926645BAD00E0C5BE /* Resources */,
+				F076B141894D942829E1FC0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +164,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		393E4D0AE112AB488117279F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ranking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F076B141894D942829E1FC0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ranking/Pods-Ranking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ranking/Pods-Ranking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ranking/Pods-Ranking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0BC1688726645BAD00E0C5BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +213,8 @@
 			files = (
 				0BC1689326645BAD00E0C5BE /* ViewController.swift in Sources */,
 				0BC1688F26645BAD00E0C5BE /* AppDelegate.swift in Sources */,
+				0BC168A92664650000E0C5BE /* AddViewController.swift in Sources */,
+				0BC168AC2664686B00E0C5BE /* Player.swift in Sources */,
 				0BC1689126645BAD00E0C5BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +359,7 @@
 		};
 		0BC168A026645BB000E0C5BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D92F9C8358E2264BBF3EECE /* Pods-Ranking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +378,7 @@
 		};
 		0BC168A126645BB000E0C5BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4B9C07FEB8CDCEE527EF15 /* Pods-Ranking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
